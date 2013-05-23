@@ -40,9 +40,9 @@ module.exports = function(grunt) {
     // Create the html files from page layouts and partial html fragments
     assemble: {
       options: {
-        assets: '/',
+        assets: 'dist/',
         layout: 'src/layouts/h5bp.hbs',
-        partials: 'src/partials/*.hbs',
+        partials: ['src/partials/*.hbs'],
         data: 'src/data/*.json'
       },
       pages: {
@@ -53,6 +53,7 @@ module.exports = function(grunt) {
     // Watch JS, LESS & HTML files for changes, copy & compile but not minify for easy debug during dev
     watch: {
       project: {
+        options: {livereload: true},
         files: 'src/**',
         tasks: ['copy', 'less', 'assemble']
       }
