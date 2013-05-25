@@ -1,3 +1,8 @@
+@blue0: #00b9e9;
+@black0: #1d1f1e;
+
+@import "font-awesome/font-awesome";
+
 @font-face {
   font-family: 'allerbold';
   src: url('../font/aller_bd.eot');
@@ -26,6 +31,80 @@
   font-style: normal;
 }
 
-body {
+.allerregular {
   font-family: allerregular, Arial, sans-serif;
+}
+.alleritalic {
+  font-family: alleritalic, Arial, sans-serif;
+}
+.allerbold {
+  font-family: allerbold, Arial, sans-serif;
+}
+
+body {
+  .allerregular;
+  font-size: 0.813em;
+  background: #fff;
+}
+a, a:visited {
+  color: @blue0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#hd {
+  > div {
+    margin: 0 0.769em;
+  }
+  .logo {
+    display: block;
+    width: 6.615em;
+    height: 6.615em;
+    margin: 1.538em auto;
+    background: url(../img/logo-care-response@2x.png);
+    background-size: 100% 100%;
+    
+    .no-backgroundsize & {
+      background-image: url(../img/logo-care-response.png);
+    }
+  }
+  #strapline {
+    .alleritalic;
+    font-size: 1.846em;
+    color: @blue0;
+  }
+  nav {
+    ul {
+      margin: 1.308em 0;
+      padding: 0;
+    }
+    li {
+      a {
+        font-size: 1.077em;
+        color: @black0;
+        
+        &.selected {
+          color: @blue0;
+        }
+      }
+    }
+  }
+  .contact {
+    
+    .tel {
+      .alleritalic;
+      font-size: 1.846em;
+      color: @black0;
+    }
+    .email {
+      font-size: 1.692em;
+      margin-left: 0.5em;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

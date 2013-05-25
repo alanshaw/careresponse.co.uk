@@ -1,0 +1,49 @@
+#hd {
+  margin: 3.077em 0 0 0;
+  
+  > div {
+    position: relative; // for .contact
+  }
+  .logo {
+    float: left;
+    margin: -1.538em 3.846em 1.538em 0;
+  }
+  #strapline {
+    font-size: 1.846em;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 0 0 6.923em;
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      position: relative;
+      
+      &:hover {
+        text-decoration: none;
+      }
+      &.selected:after, &:hover:after {
+        font-family: FontAwesome;
+        text-align: center;
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -1em;
+        content: "\f0d7";
+      }
+    }
+  }
+  .contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    
+    .tel {
+      display: block;
+      margin-bottom: 0.333em;
+    }
+  }
+}
