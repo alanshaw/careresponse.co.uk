@@ -55,6 +55,8 @@ a:hover {
 }
 
 #hd {
+  margin: 0 0 1em 0;
+  
   > div {
     margin: 0 0.769em;
   }
@@ -106,5 +108,55 @@ a:hover {
         text-decoration: none;
       }
     }
+  }
+}
+#splash {
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 1em @black0;
+    pointer-events: none;
+    z-index: 1;
+    
+    .no-pointerevents & {
+      display: none;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  nav {
+    background: @blue0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    > div {
+      margin: 1em 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      font-size: 1.077em;
+      color: #fff;
+      
+      &.selected, &:hover {
+        color: @black0;
+        text-decoration: none;
+      } 
+    }
+  }
+}
+
+#home {
+  #splash {
+    background: url(../img/splash-home.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
   }
 }
