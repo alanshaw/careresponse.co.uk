@@ -1,0 +1,55 @@
+@blue0: #00b9e9;
+@black0: #1d1f1e;
+
+@import "font-awesome/font-awesome";
+
+@font-face {
+  font-family: 'allerbold';
+  src: url('../font/aller_bd.eot');
+  src: url('../font/aller_bd.eot?#iefix') format('embedded-opentype'),
+       url('../font/aller_bd.woff') format('woff'),
+       url('../font/aller_bd.svg#allerbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'alleritalic';
+  src: url('../font/aller_it.eot');
+  src: url('../font/aller_it.eot?#iefix') format('embedded-opentype'),
+       url('../font/aller_it.woff') format('woff'),
+       url('../font/aller_it.svg#alleritalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'allerregular';
+  src: url('../font/aller_rg.eot');
+  src: url('../font/aller_rg.eot?#iefix') format('embedded-opentype'),
+       url('../font/aller_rg.woff') format('woff'),
+       url('../font/aller_rg.svg#allerregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.allerregular {
+  font-family: allerregular, Arial, sans-serif;
+}
+.alleritalic {
+  font-family: alleritalic, Arial, sans-serif;
+}
+.allerbold {
+  font-family: allerbold, Arial, sans-serif;
+}
+
+body {
+  .allerregular;
+  font-size: 0.813em;
+  background: #fff;
+}
+a, a:visited {
+  color: @blue0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
