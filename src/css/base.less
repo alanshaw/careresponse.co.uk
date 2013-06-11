@@ -2,6 +2,8 @@
 @black0: #1d1f1e;
 @grey0: #b5bbbc;
 @grey1: #666;
+@grey2: #707774;
+@grey3: #e8e9e9;
 
 @import "font-awesome/font-awesome";
 
@@ -46,12 +48,23 @@
 body {
   .allerregular;
   font-size: 0.813em;
+  line-height: 1.5;
   background: #fff;
+  color: @grey2;
+}
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: @black0;
+  margin: 1em 0;
 }
 h1, h2, h3, h4, h5 {
   &:first-child {
     margin-top: 0;
   }
+}
+p, li {
+  line-height: 1.8;
 }
 a, a:visited {
   color: @blue0;

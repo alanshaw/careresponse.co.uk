@@ -107,12 +107,20 @@ section {
   margin: 3.462em 0;
   padding: 0.769em 0;
   border-radius: 0.308em;
+  box-shadow: 0 0.25em 0.25em @grey0;
   
   &:first-child {
     margin-top: 0;
   }
   > div {
     margin: 0 1.538em;
+  }
+  &.grey {
+    background: @grey3;
+  }
+  h1 {
+    font-size: 1.078em;
+    border-bottom: 1px dotted @grey2;
   }
 }
 
@@ -124,9 +132,11 @@ section {
   #box-clients {
     background: #7f7f7f;
     background: rgba(0, 0, 0, 0.5);
+    box-shadow: none;
     margin-top: -9em;
     padding-top: 2.308em;
     position: relative;
+    z-index: 1;
     
     h1 {
       .alleritalic;
@@ -134,6 +144,7 @@ section {
       font-weight: normal;
       color: #fff;
       margin-bottom: 1.875em;
+      border-bottom: 0;
     }
     ul {
       list-style-type: none;
@@ -158,6 +169,37 @@ section {
       border-top: 1px dotted @grey0;
       padding-top: 0.462em;
       text-align: right;
+    }
+  }
+  #box-news {
+    h1 {
+      margin-bottom: 0;
+    }
+    ul {
+      list-style-type: none;
+      margin-top: 0;
+      padding: 0;
+    }
+    li {
+      a {
+        display: block;
+        color: @grey2;
+        padding: 1em 2em 1em 0;
+        border-bottom: 1px dotted @grey2;
+        position: relative;
+        
+        &:hover {
+          color: @blue0;
+          text-decoration: none;
+        }
+        i {
+          float: right;
+          color: @blue0;
+          position: absolute;
+          top: 40%;
+          right: 1em;
+        }
+      }
     }
   }
 }
