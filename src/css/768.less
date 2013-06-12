@@ -89,18 +89,34 @@
     }
   }
 }
+#ft {
+  > div {
+    max-width: 75.385em;
+    margin: 0 auto;
+  }
+  .links {
+    text-align: right;
+    
+    img {
+      margin: 0 0 0 1em;
+    }
+  }
+}
 
 section {
-  
-  &.dots {
-    background-image: url(../img/bg-dots.gif), url(../img/bg-dots.gif);
-    background-repeat: repeat-y, repeat-y;
-    background-position: bottom left, bottom right;
+  &.grey {
+    position: relative; // Bring above ".dots"
   }
   > .container {
     max-width: 75.385em;
     margin: 0 auto;
   }
+}
+
+.dots {
+  background-image: url(../img/bg-dots.gif), url(../img/bg-dots.gif);
+  background-repeat: repeat-y, repeat-y;
+  background-position: bottom left, bottom right;
 }
 
 #home {
