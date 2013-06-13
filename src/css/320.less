@@ -104,7 +104,7 @@
   
   ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 2em 0;
     padding: 0;
   }
   li {
@@ -124,6 +124,8 @@
     }
   }
   .links {
+    text-align: center;
+    
     small {
       font-size: 1em;
       display: block;
@@ -161,6 +163,33 @@ section {
   }
 }
 
+.dots {
+  padding: 0;
+  
+  &.blue {
+    li {
+      border-bottom-color: @blue0;
+    }
+    &.top-dots {
+      li:first-child {
+        border-top-color: @blue0;
+      }
+    } 
+  }
+  &.no-style {
+    list-style-type: none;
+  }
+  &.top-dots {
+    li:first-child {
+      border-top: 1px dotted @grey2;
+    }
+  } 
+  li {
+    border-bottom: 1px dotted @grey2;
+    padding: 0.25em 0;
+  }
+}
+
 #home {
   #splash {
     background: url(../img/splash-home.jpg) no-repeat 0 0;
@@ -170,7 +199,6 @@ section {
     background: #7f7f7f;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: none;
-    margin-top: -9em;
     padding-top: 2.308em;
     position: relative;
     z-index: 1;
@@ -237,6 +265,19 @@ section {
           right: 1em;
         }
       }
+    }
+  }
+  #sec-area {
+    h1 {
+      font-size: 1.077em;
+      border-bottom: 1px dotted @grey2;
+    }
+    .map {
+      box-shadow: 0 0.25em 0.25em @grey4;
+      margin-bottom: 2em;
+    }
+    ul {
+      margin: 0;
     }
   }
 }
