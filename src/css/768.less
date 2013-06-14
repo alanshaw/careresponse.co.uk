@@ -48,6 +48,8 @@
   }
 }
 #splash {
+  background: none no-repeat 0 0;
+  background-size: 100% 100%;
   
   img {
     display: block;
@@ -62,19 +64,10 @@
     
     > .container {
       max-width: 73.846em;
-      margin: 1em auto;
-      
-      > .grid-container > div {
-        text-align: right;
-        
-        &:first-child {
-          text-align: left;
-        }
-      }
     }
     li {
       display: inline;
-      margin: 0 0 0 3.077em;
+      margin: 0 3.077em 0 0;
     }
   }
   .text {
@@ -132,11 +125,11 @@ section {
 
 #home {
   #splash {
-    background: url(../img/splash-home.jpg) no-repeat 0 0;
-    background-size: 100% 100%;
-    
-    nav > .container > .grid-container > div  {
-      text-align: right;
-    }
+    background-image: url(../img/splash-home.jpg);
+  }
+}
+#services {
+  #splash {
+    background-image: url(../img/splash-services.jpg);
   }
 }
