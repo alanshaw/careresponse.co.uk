@@ -72,17 +72,14 @@
     }
   }
   img {
-    width: 100%;
+    display: none;
   }
   nav {
+    padding: 1px 0;
     background: @blue0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 0 1em @black0;
     
     > div {
-      margin: 1em 0;
+      margin: 1em 0.769em;
     }
     ul {
       margin: 0;
@@ -97,6 +94,9 @@
         text-decoration: none;
       } 
     }
+  }
+  .text {
+    display: none;
   }
 }
 #ft {
@@ -192,8 +192,7 @@ section {
 
 #home {
   #splash {
-    background: url(../img/splash-home.jpg) no-repeat 0 0;
-    background-size: 100% 100%;
+    
   }
   #box-clients {
     background: #7f7f7f;
@@ -275,6 +274,7 @@ section {
     .map {
       box-shadow: 0 0.25em 0.25em @grey4;
       margin-bottom: 2em;
+      max-width: 100%;
     }
     ul {
       margin: 0;

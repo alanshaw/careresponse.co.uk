@@ -48,7 +48,18 @@
   }
 }
 #splash {
+  
+  img {
+    display: block;
+    width: 100%;
+  }
   nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 0 1em @black0;
+    padding: 0;
+    
     > div {
       max-width: 73.846em;
       margin: 1em auto;
@@ -68,6 +79,7 @@
     }
   }
   .text {
+    display: block;
     position: absolute;
     width: 100%;
     top: 3.077em;
@@ -121,6 +133,9 @@ section {
 
 #home {
   #splash {
+    background: url(../img/splash-home.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+    
     nav {
       ul {
         float: none;
