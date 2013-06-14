@@ -60,17 +60,16 @@
     box-shadow: 0 0 1em @black0;
     padding: 0;
     
-    > div {
+    > .container {
       max-width: 73.846em;
       margin: 1em auto;
-    }
-    ul {
-      text-align: right;
-      margin: 0 0.769em;
       
-      &:first-child {
-        float: left;
-        text-align: left;
+      > .grid-container > div {
+        text-align: right;
+        
+        &:first-child {
+          text-align: left;
+        }
       }
     }
     li {
@@ -103,7 +102,7 @@
 }
 #ft {
   > div {
-    max-width: 75.385em;
+    max-width: 73.846em;
     margin: 0 auto;
   }
   .links {
@@ -120,7 +119,7 @@ section {
     position: relative; // Bring above ".dots"
   }
   > .container {
-    max-width: 75.385em;
+    max-width: 73.846em;
     margin: 0 auto;
   }
 }
@@ -136,11 +135,8 @@ section {
     background: url(../img/splash-home.jpg) no-repeat 0 0;
     background-size: 100% 100%;
     
-    nav {
-      ul {
-        float: none;
-        text-align: right;
-      }
+    nav > .container > .grid-container > div  {
+      text-align: right;
     }
   }
 }
