@@ -79,7 +79,7 @@
     padding: 1px 0;
     
     > .container {
-      margin: 1em auto;
+      margin: 0.5em auto;
     }
     ul {
       margin: 0;
@@ -158,7 +158,7 @@ section {
     background: @grey3;
   }
   h1 {
-    font-size: 1.078em;
+    font-size: 1.077em;
     border-bottom: 1px dotted @grey2;
   }
 }
@@ -176,9 +176,6 @@ section {
       }
     } 
   }
-  &.no-style {
-    list-style-type: none;
-  }
   &.top-dots {
     li:first-child {
       border-top: 1px dotted @grey2;
@@ -189,11 +186,49 @@ section {
     padding: 0.25em 0;
   }
 }
+ul.dots {
+  list-style-type: none;
+  
+  li {
+    position: relative;
+    padding-left: 1.5em;
+    
+    &:before {
+      position: absolute;
+      top: -0.077em;
+      left: 0.25em;
+      font-size: 1.5em;
+      content: "• ";
+      color: @blue0;
+    }
+  }
+  &.no-disc {
+    list-style-type: none;
+  }
+}
+
+#box-testimonials {
+  h1 {
+    i {
+      float: right;
+      font-size: 1.429em;
+      font-weight: lighter;
+      color: @grey1;
+      margin-top: -0.133em;
+    }
+  }
+  blockquote {
+    margin: 0.5em 0;
+    border-bottom: 1px dotted @grey0;
+    
+    footer {
+      color: @grey0;
+      padding: 2em 0 1em;
+    }
+  }
+}
 
 #home {
-  #splash {
-    
-  }
   #box-clients {
     background: #7f7f7f;
     background: rgba(0, 0, 0, 0.5);
@@ -278,6 +313,17 @@ section {
     }
     ul {
       margin: 0;
+    }
+  }
+}
+#services {
+  #sec-workers {
+    .imgs {
+      text-align: center;
+      
+      .logo {
+        margin: 4em 0 0;
+      }
     }
   }
 }
