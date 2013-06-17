@@ -43,6 +43,7 @@ module.exports = function(grunt) {
         assets: 'dist/',
         layout: 'src/layouts/h5bp.hbs',
         partials: ['src/partials/*.hbs'],
+        helpers: ['src/helpers/*'],
         data: 'src/data/*.json'
       },
       pages: {
