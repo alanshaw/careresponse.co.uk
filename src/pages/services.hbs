@@ -1,5 +1,5 @@
 ---
-title: Care Response
+title: Services - Care Response
 id: services
 ---
 
@@ -45,7 +45,8 @@ id: services
     <div class="grid-container">
       <div class="grid-40 prefix-5 suffix-10">
         <h1 id="care-provision">Care provision</h1>
-        <p>We promote the independence of clients by supporting them at home. Care calls range from 15 minute pop in visits to one hour and above. Clients structure these calls to suit their needs. The services we provide range from:</p>
+        <p>We promote the independence of clients by supporting them at home. Care calls range from 15 minute pop in visits to one hour and above. Clients structure these calls to suit their needs.</p>
+        <p>The services we provide range from:</p>
         <ul class="dots">
           <li>Assistance in the morning, including helping clients get out of bed, wash, bath, get dressed and have breakfast</li>
           <li>Shopping for or with a client</li>
@@ -58,28 +59,13 @@ id: services
         <p>To discuss your requirements, please <a href="contact.html">contact us</a> or call us on <a href="tel:01344876099" class="tel">01344 876099</a>. If you wish to go ahead, we will then arrange an appointment for you, normally with our Care Manager Olivia Macleay, to construct a suitable Care Plan.</p>
       </div>
       <div class="grid-40 suffix-5">
-        <article id="box-testimonials" class="box grey">
-          <div>
-            <h1>Testimonials <i class="icon-comment-alt"></i></h1>
-            <blockquote>
-              Care Response offers a flexible and well organised domiciliary care service. The Registered Provider has a very hands on approach and is closely involved, with the Registered Manager, in a day to day running of the business. Care Response care that staff and clients are happy within their work and care.
-              <footer>
-                H.D. (Care Quality Commission Inspector)<br/>
-                Care Response Key Inspection Report
-              </footer>
-            </blockquote>
-            <blockquote>
-              Thank you so much for the very beautiful bouquet of flowers. I was so moved that you had been so kind and generous. I will miss all my colleagues and friends, of which Care Response are included. I have always held you in the highest regard as a very principled and trustworthy care provider, Avis you have my utmost respect.
-              <footer>L.K.<br/>2011</footer>
-            </blockquote>
-          </div>
-        </article>
+        {{> box-testimonials }}
       </div>
-    </div>
-  </div>
+    </div><!--/.grid-container-->
+  </div><!--/.content-->
 </section>
 
-<section id="sec-workers" class="grey">
+<section class="grey">
   <div class="container">
     <div class="grid-container">
       <div class="grid-40 prefix-5 suffix-10">
@@ -95,9 +81,9 @@ id: services
           <li>Supervision and regular reviews to ensure quality maintenance</li>
         </ul>
       </div>
-      <div class="grid-40 suffix-5 imgs">
+      <div class="grid-40 suffix-5">
         <img src="img/workers.png" alt="Care workers"/>
-        <img class="logo" src="img/logo-care-response-caring-4u.png" alt="Care Response - Caring for you logo"/>
+        {{> logo-caring-4u }}
       </div>
     </div><!--/.grid-container-->
   </div><!--/.content-->
