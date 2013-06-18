@@ -1,0 +1,41 @@
+---
+title: News - Care Response
+id: news
+---
+
+{{> header }}
+
+<div id="splash">
+  <img src="img/proportionator.gif" alt="Splash">
+  <nav class="sub">
+    <div class="container">
+      <div class="grid-container">
+        <div class="grid-40 prefix-55 suffix-5 tablet-grid-45">
+          <ul>
+            <li><a href="about.html"{{{selectedClass "about"}}}>About</a></li>
+            <li><a href="careers.html"{{{selectedClass "careers"}}}>Careers</a></li>
+            <li><a href="contact.html"{{{selectedClass "contact"}}}>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<section class="side-dots">
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-55 prefix-5 suffix-5">
+        <article>
+          <h1>Testimonials</h1>
+        </article>
+      </div>
+      <aside class="grid-30 suffix-5">
+        {{> box-testimonials }}
+        {{> logo-caring-4u }}
+      </aside>
+    </div><!--/.grid-container-->
+  </div><!--/.content-->
+</section>
+
+{{> footer }}
