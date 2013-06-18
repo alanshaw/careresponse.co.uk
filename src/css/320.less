@@ -230,6 +230,29 @@ ul.dots {
     }
   }
 }
+#box-news {
+  h1 {
+    i {
+      float: right;
+      font-size: 1.429em;
+      font-weight: lighter;
+      color: @grey1;
+      margin-top: -0.133em;
+    }
+  }
+  h2 {
+    font-size: 1em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 1em 0;
+    padding-bottom: 1em;
+    border-bottom: 1px dotted @grey0;
+  }
+}
 
 #home {
   #box-clients {
@@ -331,6 +354,28 @@ ul.dots {
     
     img {
       max-width: 100%;
+    }
+  }
+}
+#testimonials {
+  blockquote {
+    margin: 2em 0;
+    padding: 2em 65px 0 80px;
+    border-top: 1px dotted @grey0;
+    background: url(../img/quot-start.gif) no-repeat 0 2em;
+    background-image: url(../img/quot-start.gif), url(../img/quot-end.gif);
+    background-position: 0 2em, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    
+    &:nth-child(even) {
+      background: url(../img/quot-start-grey.gif) no-repeat 0 2em;
+      background-image: url(../img/quot-start-grey.gif), url(../img/quot-end-grey.gif);
+      background-position: 0 2em, bottom right;
+      background-repeat: no-repeat, no-repeat;
+    }
+    footer {
+      color: @grey0;
+      padding: 2em 0 1em;
     }
   }
 }
