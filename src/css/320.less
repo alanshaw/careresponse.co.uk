@@ -380,14 +380,22 @@ ul.dots {
   }
 }
 #news {
-  article {
-    margin: 1em 0;
-    padding-bottom: 1em;
-    border-bottom: 1px dotted @blue0;
-    
-    h1 {
-      font-size: 1.846em;
-      border-bottom: 1px dotted @grey0;
+  #articles {
+    article {
+      margin: 3.846em 0 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px dotted @blue0;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+      h1 {
+        font-size: 1.846em;
+        border-bottom: 1px dotted @grey0;
+      }
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
