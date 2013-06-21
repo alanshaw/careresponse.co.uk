@@ -1,3 +1,5 @@
+// Structure //////////////////////////////////////////////////////////////////
+
 #hd {
   margin: 0 0 1em 0;
   
@@ -99,6 +101,37 @@
     display: none;
   }
 }
+section {
+  padding: 3.846em 0;
+  
+  &.grey {
+    background: @grey3;
+    box-shadow: 0 0 0.75em @grey0;
+  }
+}
+#box-news {
+  h1 {
+    i {
+      float: right;
+      font-size: 1.429em;
+      font-weight: lighter;
+      color: @grey1;
+      margin-top: -0.133em;
+    }
+  }
+  h2 {
+    font-size: 1em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 1em 0;
+    padding-bottom: 1em;
+    border-bottom: 1px dotted @grey0;
+  }
+}
 #ft {
   padding: 3.846em 0;
   
@@ -133,14 +166,71 @@
     }
   }
 }
-section {
-  padding: 3.846em 0;
+
+// Form ///////////////////////////////////////////////////////////////////////
+
+input[type=text], input[type=tel], input[type=email], textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid @grey3;
+  .allerregular;
+  color: @grey2;
+  padding: 0.615em 2em;
+  width: 100%;
   
-  &.grey {
-    background: @grey3;
-    box-shadow: 0 0 0.75em @grey0;
+  &::-webkit-input-placeholder { // WebKit
+    color: @blue0;
+  }
+  &:-moz-placeholder { // Firefox 4 to 18
+    color: @blue0;
+  }
+  &::-moz-placeholder { // Mozilla Firefox 19+
+    color: @blue0;
+  }
+  &:-ms-input-placeholder { // Internet Explorer 10+
+    color: @blue0;
   }
 }
+textarea {
+  min-height: 12.5em;
+}
+.field {
+  margin: 0.615em 0;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+  label {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+button {
+  background: @blue0;
+  border: 0;
+  padding: 0.615em 2em;
+  .allerregular;
+  color: #fff;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  
+  i {
+    margin-right: 0.25em;
+  }
+}
+
+// Class //////////////////////////////////////////////////////////////////////
 
 .box {
   margin: 3.462em 0;
@@ -221,7 +311,13 @@ ul.dots {
     }
   }
   &.no-disc {
-    list-style-type: none;
+    li {
+      padding-left: 0;
+      
+      &:before {
+        display: none;
+      }
+    }
   }
 }
 .logo-caring-4u {
@@ -249,29 +345,8 @@ ul.dots {
     }
   }
 }
-#box-news {
-  h1 {
-    i {
-      float: right;
-      font-size: 1.429em;
-      font-weight: lighter;
-      color: @grey1;
-      margin-top: -0.133em;
-    }
-  }
-  h2 {
-    font-size: 1em;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    margin: 1em 0;
-    padding-bottom: 1em;
-    border-bottom: 1px dotted @grey0;
-  }
-}
+
+// Page ///////////////////////////////////////////////////////////////////////
 
 #home {
   #box-clients {
@@ -473,6 +548,24 @@ ul.dots {
   }
 }
 #contact {
+  h2 {
+    font-size: 1.846em;
+    .allerregular;
+    color: @blue0;
+    margin: 0.5em 0;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  #office-details {
+    color: @blue0;
+    
+    span {
+      float: right;
+      color: @grey2;
+    }
+  }
   #sec-map {
     iframe {
       border: 1px solid @grey3;

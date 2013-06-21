@@ -1,3 +1,5 @@
+// Structure //////////////////////////////////////////////////////////////////
+
 #hd {
   margin: 3.077em 0 1em 0;
   
@@ -93,6 +95,15 @@
     }
   }
 }
+section {
+  &.grey {
+    position: relative; // Bring above ".dots"
+  }
+  > .container {
+    max-width: 73.846em;
+    margin: 0 auto;
+  }
+}
 #ft {
   > div {
     max-width: 73.846em;
@@ -107,21 +118,15 @@
   }
 }
 
-section {
-  &.grey {
-    position: relative; // Bring above ".dots"
-  }
-  > .container {
-    max-width: 73.846em;
-    margin: 0 auto;
-  }
-}
+// Class //////////////////////////////////////////////////////////////////////
 
 .side-dots {
   background-image: url(../img/bg-dots.gif), url(../img/bg-dots.gif);
   background-repeat: repeat-y, repeat-y;
   background-position: bottom left, bottom right;
 }
+
+// Page ///////////////////////////////////////////////////////////////////////
 
 #home {
   #splash {
