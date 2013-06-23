@@ -56,6 +56,8 @@ $("#home").each(function () {
 })
 
 $("#news").each(function () {
+  var hash = window.location.hash
+  window.location.hash = ''
   cr.getNewsFeed(5, function (er, feed) {
     if (er) return console.error('Failed to load news feed', er)
     var container = $('#articles')
@@ -64,7 +66,7 @@ $("#news").each(function () {
         , article = $("<article/>").append(title).append(entry.content).attr('id', cr.getPostId(entry.link))
       container.append(article)
     })
-    window.location.hash = window.location.hash
+    window.location.hash = hash
   })
 })
 
