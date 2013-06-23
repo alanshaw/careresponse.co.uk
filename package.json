@@ -18,7 +18,7 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
-    "assemble": "~0.3.78",
+    "assemble": "~0.4.0",
     "grunt-contrib-watch": "~0.4.3",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-less": "~0.6.1",
