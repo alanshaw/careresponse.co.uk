@@ -9,8 +9,7 @@
     exit;
   }
   
-  $to = 'alan@freestyle-developemnts.co.uk';
-  $from = 'website@careresponse.co.uk';
+  $to = 'info@careresponse.co.uk';
   $subject = 'careresponse.co.uk contact form submission';
   $body = "First name: ${_POST['forename']}\n";
   $body = "Surname: ${_POST['surname']}\n";
@@ -18,9 +17,7 @@
   $body = "Email: ${_POST['email']}\n";
   $body = "Message: ${_POST['msg']}\n";
   
-  $headers = "From: careresponse.co.uk <$from>\r\n";
-  
-  if (mail($to, $subject, $body, $headers)) {
+  if (mail($to, $subject, $body)) {
     header('Location: contact.html#sent');
   } else {
     header('Location: contact.html#error');
