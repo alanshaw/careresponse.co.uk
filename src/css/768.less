@@ -36,6 +36,9 @@
         content: "\f0d7";
       }
     }
+    .lt-ie8 & {
+      display: inline;
+    }
   }
   .contact {
     position: absolute;
@@ -50,8 +53,7 @@
   }
 }
 #splash {
-  background: @grey3 url(../img/splash-default.jpg) no-repeat 0 0;
-  background-size: 100% 100%;
+  background: @grey3;
   
   img {
     display: block;
@@ -130,8 +132,6 @@ section {
 
 #home {
   #splash {
-    background-image: url(../img/splash-home.jpg);
-    
     .text {
       blockquote {
         color: @blue0;
@@ -142,40 +142,5 @@ section {
         }
       }
     }
-  }
-}
-#services {
-  #splash {
-    background-image: url(../img/splash-services.jpg);
-  }
-}
-#clients {
-  #splash {
-    background-image: url(../img/splash-clients.jpg);
-  }
-}
-#testimonials {
-  #splash {
-    background-image: url(../img/splash-testimonials.jpg);
-  }
-}
-#news {
-  #splash {
-    background-image: url(../img/splash-news.jpg);
-  }
-}
-#about {
-  #splash {
-    background-image: url(../img/splash-about.jpg);
-  }
-}
-#careers {
-  #splash {
-    background-image: url(../img/splash-careers.jpg);
-  }
-}
-#contact {
-  #splash {
-    background-image: url(../img/splash-contact.jpg);
   }
 }
