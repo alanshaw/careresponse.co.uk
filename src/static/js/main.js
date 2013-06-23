@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  
   $('a[href^="#"]').on('click',function (e) {
     e.preventDefault()
     var target = this.hash, $target = $(target)
@@ -8,4 +9,6 @@ $(document).ready(function(){
         window.location.hash = target
     })
   })
+  
+  $('.validation-engine').validationEngine()
 })

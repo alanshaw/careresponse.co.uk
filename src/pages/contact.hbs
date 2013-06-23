@@ -82,32 +82,38 @@ id: contact
 <section id="sec-form" class="grey">
   <div class="container">
     <div class="grid-container">
+      <div id="error" class="grid-90 prefix-5 suffix-5">
+        An error occurred sending your message.
+      </div>
       <div class="grid-90 prefix-5 suffix-5">
         <h1 id="form">Contact form</h1>
       </div>
-      <form method="post" action="send">
-        <div class="grid-40 prefix-5 suffix-5">
+      <form id="sent" class="validation-engine" method="post" action="contact-send.php">
+        <div class="grid-40 prefix-5 suffix-5 target">
+          Thanks, your message has been sent.
+        </div>
+        <div class="grid-40 prefix-5 suffix-5 no-target">
           <div class="field">
             <label for="forename">First name</label>
-            <input type="text" name="forename" placeholder="First name" />
+            <input type="text" name="forename" placeholder="First name" class="validate[required]"/>
           </div>
           <div class="field">
             <label for="surname">Surname</label>
-            <input type="text" name="surname" placeholder="Surname" />
+            <input type="text" name="surname" placeholder="Surname" class="validate[required]"/>
           </div>
           <div class="field">
             <label for="tel">Phone number</label>
-            <input type="tel" name="tel" placeholder="Phone number" />
+            <input type="tel" name="tel" placeholder="Phone number" class="validate[required]"/>
           </div>
           <div class="field">
             <label for="tel">Email address</label>
-            <input type="email" name="tel" placeholder="Email address" />
+            <input type="email" name="email" placeholder="Email address" class="validate[required,custom[email]]"/>
           </div>
         </div>
-        <div class="grid-35 prefix-5 suffix-10">
+        <div class="grid-35 prefix-5 suffix-10 no-target">
           <div class="field">
             <label for="msg">Message</label>
-            <textarea name="msg" placeholder="Your message"></textarea>
+            <textarea name="msg" placeholder="Your message" class="validate[required]"></textarea>
           </div>
           <div class="field">
             <button type="submit"><i class="icon-chevron-right"></i> Send</button>

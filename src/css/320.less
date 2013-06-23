@@ -571,4 +571,27 @@ ul.dots {
       border: 1px solid @grey3;
     }
   }
+  #error {
+    margin-bottom: 1em;
+    color: red;
+    display: none;
+    
+    &:target {
+      display: block;
+    }
+  }
+  #sent {
+    .target {
+     display: none;
+    }
+    
+    &:target {
+      .no-target {
+        display: none;
+      }
+      .target {
+        display: block;
+      }
+    }
+  }
 }
